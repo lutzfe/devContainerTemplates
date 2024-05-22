@@ -10,12 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
+        with:
+          node-version: 20
       - name: "Publish Templates"
         uses: devcontainers/action@v1
         with:
           publish-templates: "true"
           base-path-to-templates: "./src"
           generate-docs: "true"
+          node-version: 20
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
