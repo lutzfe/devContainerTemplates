@@ -1,6 +1,8 @@
 name: "Release Dev Container Templates & Generate Documentation"
 on:
-  workflow_dispatch:
+  push:
+    branches: 
+      - 'main'
 
 jobs:
   deploy:
@@ -13,7 +15,7 @@ jobs:
         uses: devcontainers/action@v1
         with:
           publish-templates: "true"
-          base-path-to-templates: "./src/templates"
+          base-path-to-templates: "./src/temp"
           generate-docs: "true"
 
         env:
