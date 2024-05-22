@@ -1,6 +1,6 @@
 {
     "id": "ui5",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "name": "SAPUI5",
     "description": "Dev Container for SAPUI5 Development",
     "documentationURL": "https://github.com/lutzfe/devContainerTemplates/blob/main/README.md",
