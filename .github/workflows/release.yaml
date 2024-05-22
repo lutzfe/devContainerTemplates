@@ -9,9 +9,7 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with: 
-          node-version: '20.x'
+      - uses: actions/checkout@v4
       
       - name: "Publish Templates"
         uses: devcontainers/action@v1
@@ -19,6 +17,5 @@ jobs:
           publish-templates: "true"
           base-path-to-templates: "./src"
           generate-docs: "true"
-          node-version: '20.x'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
