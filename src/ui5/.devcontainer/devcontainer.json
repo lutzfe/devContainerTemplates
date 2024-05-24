@@ -12,7 +12,7 @@
 	"forwardPorts": [8080, 35729],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install -g @ui5/cli; npm i; ",
+	"postCreateCommand": "npm install -g @ui5/cli @sap/generator-fiori; ",
 
 	// Configure tool-specific properties.
 	"customizations": {
