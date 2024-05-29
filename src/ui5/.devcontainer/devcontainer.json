@@ -14,7 +14,7 @@
 	"forwardPorts": [8080, 35729],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "npm install -g @ui5/cli @sap/generator-fiori; ",
+	"postCreateCommand": "cf install-plugin -f https://github.com/cloudfoundry-incubator/multiapps-cli-plugin/releases/latest/download/multiapps-plugin.linux32",
 
 	// Configure tool-specific properties.
 	"customizations": {
