@@ -13,6 +13,10 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "cf install-plugin -f https://github.com/cloudfoundry-incubator/multiapps-cli-plugin/releases/latest/download/multiapps-plugin.linux32",
 
+	// Podman specific configuration
+	"runArgs": ["--userns=keep-id"],
+	"containerEnv": {"HOME": "/home/node"},
+
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
