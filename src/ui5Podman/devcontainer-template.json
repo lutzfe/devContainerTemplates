@@ -1,6 +1,6 @@
 {
     "id": "ui5Podman",
-    "version": "1.3.1",
+    "version": "1.3.2",
     "name": "SAPUI5 with Podman",
     "description": "Dev Container for SAPUI5 Development with Podman",
     "documentationURL": "https://github.com/lutzfe/devContainerTemplates/blob/main/README.md",

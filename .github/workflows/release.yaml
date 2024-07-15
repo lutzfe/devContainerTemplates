@@ -1,13 +1,12 @@
 name: "Release Dev Container Templates"
 on:
   push:
-    branches: 
-      - 'forDocker'
+    branches:
       - 'forPodman'
 
 jobs:
   deploy:
-    if: ${{ github.ref == 'refs/heads/forDocker' || github.ref == 'refs/heads/forPodman'}}
+    if: ${{ github.ref == 'refs/heads/forPodman'}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
