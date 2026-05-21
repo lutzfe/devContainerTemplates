@@ -3,8 +3,8 @@ FROM mcr.microsoft.com/devcontainers/typescript-node:24
 WORKDIR /workspaces/ui5
 
 RUN npm i -g npm@11
-RUN npm config set min-release-age 7
-RUN npm config set engine-strict true
+RUN npm config set min-release-age 7 --global
+RUN npm config set engine-strict true --global
 RUN npm install -g @ui5/cli @sap/generator-fiori yo
 RUN npm install mbt rimraf
 
